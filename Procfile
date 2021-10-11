@@ -1,1 +1,1 @@
-web: babel-node app.js --exec
+web: node app.js

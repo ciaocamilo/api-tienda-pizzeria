@@ -7,7 +7,8 @@ const app = express();
 
 // Conexión base de datos
 const mongoose = require('mongoose');
-const uri = 'mongodb://localhost:27017/Tienda_CA';
+// const uri = 'mongodb://localhost:27017/Tienda_CA';
+const uri = 'mongodb+srv://caDb:robomongo@cluster0.svtoq.mongodb.net/tienda_ca?retryWrites=true&w=majority';
 const options = {useNewUrlParser: true, useUnifiedTopology: true};
 
 mongoose.connect(uri, options).then(

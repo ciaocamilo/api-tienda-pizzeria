@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Rutas
 app.get('/', function (req, res) {
-     res.send('Hola Mundo mundial!');
+     res.send('Hola mi Mundo mundial!');
     });
 
 app.use('/api', require('./routes/producto'));

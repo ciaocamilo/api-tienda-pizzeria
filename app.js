@@ -24,11 +24,12 @@ app.use(express.urlencoded({ extended: true }));
 
 // Rutas
 app.get('/', function (req, res) {
-     res.send('Hola mi Mundo mundial!');
+     res.send('API de productos de la tienda y de la Pizzeria');
     });
 
 app.use('/api', require('./routes/producto'));
 app.use('/api', require('./routes/cliente'));
+app.use('/api', require('./routes/pizzeria_producto'));
 
 // Middleware para Vue.js router modo history
 const history = require('connect-history-api-fallback');

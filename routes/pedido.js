@@ -5,7 +5,7 @@ const router = express.Router();
 import Pedido from '../models/pedido';
 
 // Ruta para crear pedido
-router.post('/nuevo-pedido', async(req, res) => {
+router.post('/pizzeria/nuevo-pedido', async(req, res) => {
     const body = req.body.data;
     try {
         const pedidoDB = await Pedido.create(body);
